@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: hsl(196, 90%, 75%);
+}
+
+a {
+  color: #00B7FF;
+}
+.weather.title {
+	/*margin: 0 auto;
+	width: 100px;*/
+	text-align: center;
+	font-weight: bold;
+	height: 2em;
+}
+ul{
+	list-style-type: none;
+}
+.forecast-detail {
+	margin-bottom: 1em;
+}
+#weather h4 {
+	margin-bottom: 0;
+}
+.active {
+	border: 2px solid black;
+
+}
+.high-temp, .low-temp {
+	display: none;
+
+}
+.active .high-temp, .active .low-temp {
+	display: block;
+}
+.current, .seven-day  {
+
+	cursor: pointer; 
+}
+.current:hover h2, .seven-day:hover, .minute:hover h2 {
+	color: white;
+}
+.disappear li {
+	display: none;
+
+}
+

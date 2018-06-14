@@ -1,0 +1,53 @@
+  <!--  <link rel="stylesheet" href="/stylesheets/weather.css"> -->
+
+<section id="weather">
+<h1 class="weather title">WEATHER FORECAST</h1>
+{{city}}
+<form action="">
+  <h4>City Name</h4>
+  <input type="text" name="city" placeholder="City">
+  
+  <input type="submit" value="Submit">
+</form> 
+
+
+<div class="current disappear">
+<h2>Current Conditions</h2>
+
+	<ul>
+		<li>{{current.summary}}</li>
+		<li>{{current.temperature}}</li>
+		
+	</ul>
+
+</div>
+
+<div class="minute disappear">
+	<h2>Minute by Minute</h2>
+	
+		<ul>
+			<li>{{minute.summary}}</li>
+			{{#each minute.data}}
+			<li>{{this.time}}</li>
+			<li>Chance of Rain:{{this.precipProbability}}%</li>
+				{{/each}}
+		</ul>
+
+
+</div>
+
+<div class="forecast disappear">
+	<h2 class="seven-day">7 Day Forecast</h2>
+<ul>
+{{#each  data}}
+   <li class="forecast-detail">
+	  <div class="day">Day:{{this.time}}</div>
+      <div class="sum">Summary:{{this.summary}}</div>
+      <div class="high-temp">High Temp:{{this.temperatureHigh}}</div>
+      <div class="low-temp">Low Temp:{{this.temperatureLow}}</div>
+   </li>   
+{{/each}}
+</ul>
+</div>
+
+</section>
