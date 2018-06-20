@@ -46,7 +46,7 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 // mongoose
-//mongoose.connect('mongodb://localhost/boiler');
+mongoose.connect('mongodb://weather:weather1@ds263500.mlab.com:63500/outsideweather');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
