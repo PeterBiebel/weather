@@ -3,9 +3,13 @@
 }
 
 body {
-  padding: 50px;
+  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: hsl(57, 50%, 75%);
+  background-image: url('../lightning5.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 
 a {

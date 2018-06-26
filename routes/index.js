@@ -47,11 +47,17 @@ router.get('/weather',  (req, res) => {
 })
 
 router.get('/', (req, res) => {
-    res.render('index', { user : req.user });
+   // res.render('index', { user : req.user });
+   res.redirect('weather?city=Atlanta');
+
+
 });
 
 router.get('/register', (req, res) => {
-    res.render('register', { });
+  //  res.render('register', { });
+  res.redirect('weather?city=Atlanta');
+
+
 });
 
 router.post('/register', (req, res, next) => {
