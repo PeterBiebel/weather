@@ -5,28 +5,45 @@
 body {
   
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: hsl(57, 50%, 75%);
+  background-color: black;
   background-image: url('../lightning5.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
+	max-height: 100vh;
 }
 
 a {
   color: #00B7FF;
 }
-.weather.title {
+.weather.title, .city {
 	/*margin: 0 auto;
 	width: 100px;*/
 	text-align: center;
 	font-weight: bold;
 	height: 2em;
+	color: #f5f5f5;
+	-webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
 ul{
 	list-style-type: none;
 }
 .forecast-detail {
 	margin-bottom: 1em;
+}
+#weather {
+	background-color: rgba(255, 255, 255, 0);
+	padding: 50px;
+	width: 70%;
+	margin: auto;
+	text-align: center;
 }
 #weather h4 {
 	margin-bottom: 0;
@@ -52,5 +69,14 @@ ul{
 .disappear li {
 	display: none;
 
+}
+.current h2, .seven-day, .minute h2 {
+	background-color: #f5f5f50f;
+	padding: 7px;
+
+}
+li {
+	color: white;
+	text-align: left;
 }
 
